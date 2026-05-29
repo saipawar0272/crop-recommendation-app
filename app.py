@@ -19,4 +19,4 @@ def predict ():
     return render_template("index.html", prediction_text="The Predicted Crop is  : {} ".format(prediction))
 
 if __name__ == "__main__":
-    flask_app.run(debug=True)
+    flask_app.run(host="0.0.0.0", port=5000)
